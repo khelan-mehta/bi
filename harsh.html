@@ -1,0 +1,120 @@
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 90%;
+}
+.wrapper img {
+  height: 396px;
+  /* min-width: 40%; */
+}
+
+.wrapper .bigger {
+    /* flex-grow: 1; */
+    /* width: 60%; */
+}
+
+.wrapper img:hover {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  /* height: 100vh; */
+  padding: 1rem;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* width: 100vw; */
+}
+.wrapper-usps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .wrapper-usps {
+    grid-template-columns: 1fr;
+  }
+}
+.wrapper-usps .usp {
+  display: flex;
+  gap: 2rem;
+}
+.wrapper-usps .usp img {
+  height: 128px;
+  width: auto;
+  padding: 0.5rem;
+  border: solid #ececec 1px;
+}
+
+.cont {
+  min-height: calc(100vh - 4rem);
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+</style>
+<body>
+    
+    <!-- <div class="wrapper">
+           push aside animation 
+            <img src="https://images.unsplash.com/photo-1605183374606-32f717914695?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="" class="bigger">
+            <img src="https://images.unsplash.com/photo-1584607839936-b6c6964330ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1584607839936-b6c6964330ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1605183374606-32f717914695?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="" class="bigger">
+            <img src="https://images.unsplash.com/photo-1605183374606-32f717914695?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="" class="bigger">
+            <img src="https://images.unsplash.com/photo-1584607839936-b6c6964330ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="">
+          
+    </div> -->
+    <nav>
+      <h1>br.</h1>
+    </nav>
+    <div class="flex w-full flex-col relative gap-6 p-2">
+      <ul class="sidebar rounded-full flex-grow-0 fixed bottom-6 left-6 bg-gray-900 p-3 flex flex-col gap-2 shadow-2xl">
+        <li class=""><img src="C:/Users/hpath/Downloads/whatsapp.png" alt="" class="w-8 h-8"></li>
+        <li class=""><img src="C:/Users/hpath/Downloads/whatsapp.png" alt="" class="w-8 h-8"></li>
+        <li class=""><img src="C:/Users/hpath/Downloads/whatsapp.png" alt="" class="w-8 h-8"></li>
+        <li class=""><img src="C:/Users/hpath/Downloads/whatsapp.png" alt="" class="w-8 h-8"></li>
+      </ul>
+      <div class="cont flex-grow grid grid-cols-12 lg:grid-rows-7 sm:grid-rows-8 mx-auto gap-3">
+        <!-- row-1 -->
+          <div class="content col-span-12 sm:col-span-8 sm:row-span-2 md:row-span-3 bg-red border rounded-2xl"> <img src="https://images.unsplash.com/photo-1605183374606-32f717914695?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D" alt="" class="bigger rounded-xl w-full mx-auto h-auto"></div>
+          <div class="content col-span-6 sm:row-span-1 sm:col-span-4 md:row-span-2 bg-red p-2 rounded-2xl"><h2 class="montserrat-bold">Design. Devlope. Deliver.</h2></div>
+        <!-- row-2 -->
+          <div class="content col-span-6 sm:col-span-8 sm:row-span-1 md:col-span-4 md:row-span-3 bg-red border rounded-2xl">Services</div>
+          <div class="content col-span-12 sm:col-span-4 sm:row-start-2 sm:col-start-9 sm:row-span-2 md:col-span-6 md:row-span-2 bg-red border rounded-2xl">Projects</div>
+          <div class="content col-span-4 sm:row-span-2 sm:col-span-4 md:col-span-2 bg-red md:row-span-2 border rounded-2xl">Tech stack/switch control</div>
+        <!-- row 3 -->
+        <div class="content col-span-8 sm:col-span-8 sm:row-span-2 md:col-span-4 md:row-span-2 bg-red border rounded-2xl">container 1</div>
+        <div class="content col-span-8 sm:col-span-6 sm:row-span-2 md:col-span-5 md:row-span-2 bg-red border rounded-2xl">container 1</div>
+        <div class="content col-span-4 sm:col-span-6 md:col-span-3 sm:row-span-2 md:row-span-2 bg-red border rounded-2xl">container 1</div>
+      </div>
+    </div>
+</div>
+</body>
